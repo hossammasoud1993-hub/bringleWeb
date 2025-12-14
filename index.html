@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bringle - Responsive Header</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<style>
+    .flag-1{
+        width: 28px;
+    margin-top: 8px;
+    margin-left: 100px;
+    }
+</style>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="assets/Img/image 1.png" 
+                 alt="Bringle Logo" 
+                 class="logo-icon">
+            <div class="logo-text">Bringle</div>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" role="navigation" aria-label="Main navigation">
+            <div class="nav-item active" data-page="home">
+                <a href="#home" class="nav-link">Home</a>
+            </div>
+            <div class="nav-item" data-page="about">
+                <a href="#about" class="nav-link">About us</a>
+            </div>
+            <!-- <div class="nav-item" data-page="products">
+                <a href="#" class="nav-link">Products</a>
+            </div> -->
+            <div class="nav-item" data-page="services">
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+            <div class="nav-item" data-page="contact">
+                <a href="#contact" class="nav-link">Contact Us</a>
+            </div>
+            <!-- <div class="nav-item" data-page="contact"> -->
+                <a href="ar.html" class="nav-link"><img src="assets/Img/kw.png" width="20" alt=""></a>
+            <!-- </div> -->
+
+
+
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        
+                
+            <a  href="ar.html" class="mobile-menu-btn"><img class="flag-1" src="assets/Img/kw.png" alt=""></a>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle mobile menu">
+            
+            <span>☰</span>
+        </button>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+        <div class="mobile-menu">
+            <div class="mobile-menu-header">
+                <h2 class="mobile-menu-title">Menu</h2>
+                <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close mobile menu">✕</button>
+            </div>
+            <nav class="nav-mobile" role="navigation" aria-label="Mobile navigation">
+                <div class="nav-mobile-item active" data-page="home"><a href="#home">Home</a></div>
+                <div class="nav-mobile-item" data-page="about"><a href="#about">About us</a></div>
+                <!-- <div class="nav-mobile-item" data-page="products">Products</div> -->
+                <div class="nav-mobile-item" data-page="services"><a href="#serivce">Services</a></div>
+                <div class="nav-mobile-item" data-page="contact"><a href="#contact">Contact Us</a></div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="home" class="container">
+        <div class="left-column">
+            <div class="content-wrapper">
+                <!-- Hero Section -->
+                <header class="hero-section">
+                    <div>
+                        <h1 class="hero-title">
+                            Big Deals for <span class="hero-highlight">Big Buyers</span>
+                        </h1>
+                        <p class="hero-description">
+                            Simplify your wholesale experience with Bringle — a B2B platform
+                            that connects verified businesses for faster, smarter, and more
+                            affordable bulk purchasing.
+                        </p>
+                    </div>
+                </header>
+
+                <!-- App Download Section -->
+                <section class="app-download" aria-label="App Download">
+                    <div class="app-buttons-6">
+                        <button
+                          class="app-store-button-6"
+                          onclick="window.open('https://play.google.com/store/apps/details?id=mobile.bringle.net', '_blank')"
+                          aria-label="Download from Google Play"
+                        >
+                          <div class="button-content-6">
+                            <div class="icon-wrapper-6">
+                              <svg viewBox="0 0 24 24" class="store-icon-6" fill="currentColor">
+                                <path
+                                  d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                                  fill="#000"
+                                />
+                              </svg>
+                            </div>
+                            <div class="button-text-6">
+                              <div class="button-label-6">GET IT ON</div>
+                              <div class="button-store-6">Google Play</div>
+                            </div>
+                          </div>
+                        </button>
+                        <button
+                          class="app-store-button-6 apple-button-6"
+                          onclick="window.open('https://apps.apple.com/kw/app/bringle/id6740459878', '_blank')"
+                          aria-label="Download from App Store"
+                        >
+                          <div class="button-content-6">
+                            <div class="icon-wrapper-6">
+                              <svg viewBox="0 0 24 24" class="store-icon-6" fill="currentColor">
+                                <path
+                                  d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.19 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"
+                                  fill="#000"
+                                />
+                              </svg>
+                            </div>
+                            <div class="button-text-6">
+                              <div class="button-label-6">Download on the</div>
+                              <div class="button-store-6">App Store</div>
+                            </div>
+                          </div>
+                        </button>
+                      </div>
+                </section>
+            </div>
+
+            <!-- Stats Section -->
+            <!-- <section class="stats-section" aria-label="Platform Statistics">
+                <img
+                    src="assets/Img/Frame 2085660494.png"
+                    alt="Platform users and businesses illustration"
+                    class="stats-image"
+                />
+                <div class="stats-content">
+                    <div class="stats-number">6M+</div>
+                    <div class="stats-label">Active Users</div>
+                </div>
+            </section> -->
+        </div>
+
+        <!-- Product Showcase -->
+        <aside class="product-showcase" aria-label="Product Showcase">
+            <img
+                src="assets/Img/Group 2147224132.png"
+                alt="Bringle mobile application interface showcase"
+                class="showcase-image"
+            />
+        </aside>
+    </main>
+
+
+
+    <section class="mobile-app-section">
+        <div class="download-cards-container">
+            <!-- iOS Card -->
+            <article class="app-download-card">
+                <header class="card-header">
+                    <div class="card-title-container">
+                        <h3 class="card-title">For iOS</h3>
+                        <p class="card-version">iOS 15.6+</p>
+                    </div>
+                    <button class="download-button-1" onclick="window.open('https://apps.apple.com/kw/app/bringle/id6740459878', '_blank')" aria-label="Download iOS app">
+                        <span class="button-text">Download App</span>
+                    </button>
+                </header>
+                <img src="assets/Img/appstore.png" alt="iOS app preview" class="app-preview-image">
+                <div class="platform-icon">
+                    <svg width="90" height="92" viewBox="0 0 90 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="90" height="92" rx="45" fill="#323232"></rect>
+                        <path d="M60.9932 71.7532C57.8917 74.7084 54.5055 74.2418 51.2458 72.842C47.7962 71.411 44.6314 71.3488 40.992 72.842C36.4347 74.7706 34.0295 74.2107 31.3078 71.7532C15.8639 56.1063 18.1425 32.2782 35.6752 31.4072C39.9476 31.6249 42.9225 33.7091 45.4226 33.8958C49.157 33.1492 52.7332 31.0028 56.7208 31.2828C61.4995 31.6561 65.1074 33.5225 67.4809 36.8821C57.6069 42.6991 59.9488 55.4842 69 59.0615C67.1961 63.7276 64.8542 68.3625 60.9615 71.7843L60.9932 71.7532ZM45.1061 31.2206C44.6314 24.2837 50.3596 18.5599 56.9423 18C57.8601 26.0257 49.5368 31.9982 45.1061 31.2206Z" fill="white"></path>
+                    </svg>
+                </div>
+            </article>
+
+            <!-- Android Card -->
+            <article class="app-download-card">
+                <header class="card-header">
+                    <div class="card-title-container">
+                        <h3 class="card-title">For Android</h3>
+                        <p class="card-version">Android 8.0+</p>
+                    </div>
+                    <button class="download-button-1" onclick="window.open('https://play.google.com/store/apps/details?id=mobile.bringle.net', '_blank')" aria-label="Download Android app">
+                        <span class="button-text">Download App</span>
+                    </button>
+                </header>
+                <img src="assets/Img/playstore_qr.png" alt="Android app preview" class="app-preview-image">
+                <div class="platform-icon">
+                    <svg width="90" height="92" viewBox="0 0 90 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="90" height="92" rx="45" fill="#323232"></rect>
+                        <path d="M52.3632 23.1403L54.7384 18.7318C54.7688 18.6753 54.788 18.6132 54.7951 18.5491C54.8021 18.4849 54.7968 18.42 54.7795 18.358C54.7621 18.2959 54.7331 18.238 54.694 18.1875C54.6549 18.137 54.6065 18.0949 54.5516 18.0637C54.4967 18.0324 54.4363 18.0126 54.374 18.0053C54.3116 17.9981 54.2485 18.0035 54.1882 18.0214C54.1278 18.0392 54.0715 18.0691 54.0225 18.1093C53.9734 18.1496 53.9325 18.1994 53.9021 18.2558L51.5021 22.7102C49.4535 21.786 47.2407 21.3088 45.0037 21.3088C42.7667 21.3088 40.554 21.786 38.5053 22.7102L36.1053 18.2558C36.044 18.1411 35.9408 18.0561 35.8185 18.0196C35.6963 17.9831 35.5649 17.998 35.4534 18.0611C35.3418 18.1242 35.2592 18.2304 35.2237 18.3562C35.1882 18.4819 35.2027 18.6171 35.2641 18.7318L37.6393 23.1403C35.3801 24.2879 33.4713 26.0528 32.1219 28.2419C30.7726 30.431 30.0347 32.9598 29.9891 35.5514H60.0183C59.9722 32.9592 59.2336 30.4301 57.8834 28.2409C56.5331 26.0518 54.6233 24.2872 52.3632 23.1403ZM38.0748 29.8982C37.8266 29.8982 37.5839 29.8225 37.3776 29.6806C37.1713 29.5386 37.0105 29.3369 36.9156 29.101C36.8207 28.865 36.796 28.6054 36.8446 28.355C36.8932 28.1046 37.013 27.8747 37.1886 27.6943C37.3643 27.5139 37.5881 27.3912 37.8316 27.3417C38.0751 27.2922 38.3274 27.3181 38.5565 27.4162C38.7857 27.5143 38.9814 27.6801 39.119 27.8926C39.2565 28.1052 39.3297 28.3549 39.3292 28.6103C39.3285 28.9521 39.1961 29.2797 38.9609 29.5211C38.7257 29.7626 38.407 29.8982 38.0748 29.8982ZM51.9351 29.8982C51.6869 29.8982 51.4443 29.8225 51.238 29.6806C51.0316 29.5386 50.8708 29.3369 50.776 29.101C50.6811 28.865 50.6564 28.6054 50.705 28.355C50.7536 28.1046 50.8733 27.8747 51.049 27.6943C51.2247 27.5139 51.4484 27.3912 51.6919 27.3417C51.9354 27.2922 52.1877 27.3181 52.4169 27.4162C52.6461 27.5143 52.8418 27.6801 52.9793 27.8926C53.1169 28.1052 53.19 28.3549 53.1895 28.6103C53.1889 28.9521 53.0564 29.2797 52.8213 29.5211C52.5861 29.7626 52.2674 29.8982 51.9351 29.8982ZM29.9842 59.162C29.9835 59.6534 30.0772 60.1401 30.2598 60.5942C30.4423 61.0484 30.7103 61.4609 31.0482 61.8083C31.386 62.1557 31.7873 62.431 32.2288 62.6185C32.6704 62.8061 33.1435 62.9021 33.6212 62.9011H36.0286V70.5371C36.0286 71.4555 36.3833 72.3363 37.0145 72.9857C37.6458 73.6352 38.502 74 39.3947 74C40.2875 74 41.1437 73.6352 41.775 72.9857C42.4062 72.3363 42.7609 71.4555 42.7609 70.5371V62.9011H47.249V70.5371C47.249 71.4552 47.6035 72.3356 48.2346 72.9848C48.8656 73.634 49.7215 73.9987 50.6139 73.9987C51.5063 73.9987 52.3622 73.634 52.9933 72.9848C53.6243 72.3356 53.9788 71.4552 53.9788 70.5371V62.9011H56.3887C56.8657 62.9014 57.3382 62.805 57.779 62.6173C58.2198 62.4296 58.6203 62.1544 58.9577 61.8074C59.295 61.4604 59.5625 61.0483 59.7449 60.5948C59.9274 60.1413 60.0211 59.6553 60.0208 59.1645V36.7732H29.9842V59.162ZM25.3649 36.1776C24.9228 36.1776 24.485 36.2672 24.0766 36.4413C23.6682 36.6154 23.2972 36.8706 22.9847 37.1924C22.6722 37.5141 22.4244 37.896 22.2554 38.3163C22.0865 38.7365 21.9997 39.187 22 39.6418V54.0713C22 54.5259 22.087 54.976 22.2561 55.396C22.4252 55.816 22.6731 56.1976 22.9856 56.5191C23.298 56.8405 23.669 57.0955 24.0772 57.2694C24.4854 57.4434 24.923 57.5329 25.3649 57.5329C25.8068 57.5329 26.2443 57.4434 26.6526 57.2694C27.0608 57.0955 27.4318 56.8405 27.7442 56.5191C28.0567 56.1976 28.3045 55.816 28.4736 55.396C28.6427 54.976 28.7298 54.5259 28.7298 54.0713V39.6418C28.7298 39.1872 28.6427 38.737 28.4736 38.317C28.3045 37.8971 28.0567 37.5155 27.7442 37.194C27.4318 36.8726 27.0608 36.6176 26.6526 36.4436C26.2443 36.2696 25.8068 36.1801 25.3649 36.1801M64.6351 36.1801C64.193 36.1801 63.7553 36.2697 63.3469 36.4439C62.9384 36.618 62.5674 36.8732 62.2549 37.1949C61.9424 37.5166 61.6946 37.8985 61.5256 38.3188C61.3567 38.7391 61.2699 39.1895 61.2702 39.6443V54.0738C61.2702 54.5284 61.3573 54.9786 61.5264 55.3986C61.6955 55.8185 61.9433 56.2001 62.2558 56.5216C62.5682 56.843 62.9392 57.098 63.3474 57.272C63.7557 57.4459 64.1932 57.5355 64.6351 57.5355C65.077 57.5355 65.5146 57.4459 65.9228 57.272C66.331 57.098 66.702 56.843 67.0145 56.5216C67.3269 56.2001 67.5748 55.8185 67.7439 55.3986C67.913 54.9786 68 54.5284 68 54.0738V39.6418C68 38.7237 67.6455 37.8432 67.0145 37.194C66.3834 36.5448 65.5275 36.1801 64.6351 36.1801Z" fill="white"></path>
+                    </svg>
+                </div>
+            </article>
+        </div>
+
+        <div class="content-container">
+            <header class="text-content">
+                <h1 class="main-heading">
+                    Download<span class="highlight-text"> Our Online<br>Bringle</span> Mobile App
+                </h1>
+                <p class="description">
+                    Experience seamless grocery shopping — anytime, anywhere.
+                </p>
+            </header>
+
+            <div class="statistics-container">
+                <div class="statistic-card">
+                    <div class="stat-number">6 Million+</div>
+                    <div class="stat-label">Active Users</div>
+                </div>
+                <div class="statistic-card">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Categories</div>
+                </div>
+                <div class="statistic-card">
+                    <div class="stat-number">9000+</div>
+                    <div class="stat-label">Products</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <main class="main-container">
+        <section id="about" class="benefits-section">
+            <header class="section-header">
+                <p class="section-subtitle">Benefits of Grocery App</p>
+                <h1 class="section-title">
+                    Exclusive Benefits of
+                    <span class="highlight">Bringle App</span>
+                </h1>
+            </header>
+            
+            <div class="benefits-grid">
+                <!-- Benefit Card 1 -->
+                <article class="benefit-card">
+                    <div class="icon-wrapper">
+                        <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="74" height="74" rx="37" fill="#D8FEFF"></rect>
+                            <path d="M24.9583 20C23.6433 20 22.3821 20.5224 21.4523 21.4523C20.5224 22.3821 20 23.6433 20 24.9583V46.9167C20 48.7953 20.7463 50.597 22.0747 51.9253C23.403 53.2537 25.2047 54 27.0833 54H46.9167C48.7953 54 50.597 53.2537 51.9253 51.9253C53.2537 50.597 54 48.7953 54 46.9167V42.6667H45.5V24.9583C45.5 23.6433 44.9776 22.3821 44.0477 21.4523C43.1179 20.5224 41.8567 20 40.5417 20H24.9583ZM45.5 45.5H51.1667V46.9167C51.1667 48.0438 50.7189 49.1248 49.9219 49.9219C49.1248 50.7189 48.0438 51.1667 46.9167 51.1667H45.5V45.5ZM22.8333 24.9583C22.8333 24.3947 23.0572 23.8542 23.4557 23.4557C23.8542 23.0572 24.3947 22.8333 24.9583 22.8333H40.5417C41.1053 22.8333 41.6458 23.0572 42.0443 23.4557C42.4428 23.8542 42.6667 24.3947 42.6667 24.9583V51.1667H27.0833C25.9562 51.1667 24.8752 50.7189 24.0781 49.9219C23.2811 49.1248 22.8333 48.0438 22.8333 46.9167V24.9583ZM27.0833 29.9167C27.0833 29.5409 27.2326 29.1806 27.4983 28.9149C27.7639 28.6493 28.1243 28.5 28.5 28.5H37C37.3757 28.5 37.7361 28.6493 38.0017 28.9149C38.2674 29.1806 38.4167 29.5409 38.4167 29.9167C38.4167 30.2924 38.2674 30.6527 38.0017 30.9184C37.7361 31.1841 37.3757 31.3333 37 31.3333H28.5C28.1243 31.3333 27.7639 31.1841 27.4983 30.9184C27.2326 30.6527 27.0833 30.2924 27.0833 29.9167ZM27.0833 37C27.0833 36.6243 27.2326 36.2639 27.4983 35.9983C27.7639 35.7326 28.1243 35.5833 28.5 35.5833H37C37.3757 35.5833 37.7361 35.7326 38.0017 35.9983C38.2674 36.2639 38.4167 36.6243 38.4167 37C38.4167 37.3757 38.2674 37.7361 38.0017 38.0017C37.7361 38.2674 37.3757 38.4167 37 38.4167H28.5C28.1243 38.4167 27.7639 38.2674 27.4983 38.0017C27.2326 37.7361 27.0833 37.3757 27.0833 37ZM28.5 42.6667C28.1243 42.6667 27.7639 42.8159 27.4983 43.0816C27.2326 43.3473 27.0833 43.7076 27.0833 44.0833C27.0833 44.4591 27.2326 44.8194 27.4983 45.0851C27.7639 45.3507 28.1243 45.5 28.5 45.5H32.75C33.1257 45.5 33.4861 45.3507 33.7517 45.0851C34.0174 44.8194 34.1667 44.4591 34.1667 44.0833C34.1667 43.7076 34.0174 43.3473 33.7517 43.0816C33.4861 42.8159 33.1257 42.6667 32.75 42.6667H28.5Z" fill="#09A2A4"></path>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title-1">Save Time, Save Cost</h3>
+                        <p class="card-description">Order in bulk from trusted suppliers without endless calls or middlemen. Get real-time pricing and quick delivery.</p>
+                    </div>
+                </article>
+
+                <!-- Benefit Card 2 -->
+                <article class="benefit-card">
+                    <div class="icon-wrapper">
+                        <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="74" height="74" rx="37" fill="#D8FEFF"></rect>
+                            <g transform="translate(20, 20)">
+                                <path d="M24.0835 28.3337C25.6483 28.3337 26.9168 27.0651 26.9168 25.5003C26.9168 23.9355 25.6483 22.667 24.0835 22.667C22.5187 22.667 21.2502 23.9355 21.2502 25.5003C21.2502 27.0651 22.5187 28.3337 24.0835 28.3337Z" stroke="#09A2A4" stroke-width="2"></path>
+                                <path d="M9.91683 28.3337C11.4816 28.3337 12.7502 27.0651 12.7502 25.5003C12.7502 23.9355 11.4816 22.667 9.91683 22.667C8.35202 22.667 7.0835 23.9355 7.0835 25.5003C7.0835 27.0651 8.35202 28.3337 9.91683 28.3337Z" stroke="#09A2A4" stroke-width="2"></path>
+                                <path d="M7.0835 25.4607C5.52941 25.3842 4.56183 25.1532 3.8705 24.4633C3.17916 23.7734 2.94966 22.8044 2.87316 21.2503M12.7502 25.5003H21.2502M26.9168 25.4607C28.4709 25.3842 29.4385 25.1532 30.1298 24.4633C31.1668 23.4249 31.1668 21.7561 31.1668 18.417V15.5837H24.5085C23.4531 15.5837 22.9261 15.5837 22.4997 15.4448C22.0745 15.3067 21.688 15.0698 21.3718 14.7537C21.0557 14.4375 20.8188 14.051 20.6807 13.6258C20.5418 13.1994 20.5418 12.6724 20.5418 11.617C20.5418 10.0346 20.5418 9.24408 20.3336 8.60374C20.1263 7.96592 19.7711 7.38621 19.2968 6.91199C18.8226 6.43777 18.2429 6.0825 17.6051 5.87524C16.9647 5.66699 16.1742 5.66699 14.5918 5.66699H2.8335M2.8335 11.3337H11.3335M2.8335 15.5837H8.50016" stroke="#09A2A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M20.542 8.5H23.1217C25.1844 8.5 26.2143 8.5 27.053 9.0015C27.8931 9.50158 28.3818 10.4097 29.3593 12.2258L31.167 15.5833" stroke="#09A2A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title-1">Reliable Delivery Network</h3>
+                        <p class="card-description">Our dedicated driver partners ensure your products reach your store safely and on schedule.</p>
+                    </div>
+                </article>
+
+                <!-- Benefit Card 3 -->
+                <article class="benefit-card">
+                    <div class="icon-wrapper">
+                        <svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="74" height="74" rx="37" fill="#D8FEFF"></rect>
+                            <path d="M24.9583 20C23.6433 20 22.3821 20.5224 21.4523 21.4523C20.5224 22.3821 20 23.6433 20 24.9583V46.9167C20 48.7953 20.7463 50.597 22.0747 51.9253C23.403 53.2537 25.2047 54 27.0833 54H46.9167C48.7953 54 50.597 53.2537 51.9253 51.9253C53.2537 50.597 54 48.7953 54 46.9167V42.6667H45.5V24.9583C45.5 23.6433 44.9776 22.3821 44.0477 21.4523C43.1179 20.5224 41.8567 20 40.5417 20H24.9583ZM45.5 45.5H51.1667V46.9167C51.1667 48.0438 50.7189 49.1248 49.9219 49.9219C49.1248 50.7189 48.0438 51.1667 46.9167 51.1667H45.5V45.5ZM22.8333 24.9583C22.8333 24.3947 23.0572 23.8542 23.4557 23.4557C23.8542 23.0572 24.3947 22.8333 24.9583 22.8333H40.5417C41.1053 22.8333 41.6458 23.0572 42.0443 23.4557C42.4428 23.8542 42.6667 24.3947 42.6667 24.9583V51.1667H27.0833C25.9562 51.1667 24.8752 50.7189 24.0781 49.9219C23.2811 49.1248 22.8333 48.0438 22.8333 46.9167V24.9583ZM27.0833 29.9167C27.0833 29.5409 27.2326 29.1806 27.4983 28.9149C27.7639 28.6493 28.1243 28.5 28.5 28.5H37C37.3757 28.5 37.7361 28.6493 38.0017 28.9149C38.2674 29.1806 38.4167 29.5409 38.4167 29.9167C38.4167 30.2924 38.2674 30.6527 38.0017 30.9184C37.7361 31.1841 37.3757 31.3333 37 31.3333H28.5C28.1243 31.3333 27.7639 31.1841 27.4983 30.9184C27.2326 30.6527 27.0833 30.2924 27.0833 29.9167ZM27.0833 37C27.0833 36.6243 27.2326 36.2639 27.4983 35.9983C27.7639 35.7326 28.1243 35.5833 28.5 35.5833H37C37.3757 35.5833 37.7361 35.7326 38.0017 35.9983C38.2674 36.2639 38.4167 36.6243 38.4167 37C38.4167 37.3757 38.2674 37.7361 38.0017 38.0017C37.7361 38.2674 37.3757 38.4167 37 38.4167H28.5C28.1243 38.4167 27.7639 38.2674 27.4983 38.0017C27.2326 37.7361 27.0833 37.3757 27.0833 37ZM28.5 42.6667C28.1243 42.6667 27.7639 42.8159 27.4983 43.0816C27.2326 43.3473 27.0833 43.7076 27.0833 44.0833C27.0833 44.4591 27.2326 44.8194 27.4983 45.0851C27.7639 45.3507 28.1243 45.5 28.5 45.5H32.75C33.1257 45.5 33.4861 45.3507 33.7517 45.0851C34.0174 44.8194 34.1667 44.4591 34.1667 44.0833C34.1667 43.7076 34.0174 43.3473 33.7517 43.0816C33.4861 42.8159 33.1257 42.6667 32.75 42.6667H28.5Z" fill="#09A2A4"></path>
+                        </svg>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title-1">Exclusive Wholesale Deals</h3>
+                        <p class="card-description">Access limited-time discounts, trending items, and near-expiry products at unbeatable prices.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- <div class="pagination-dots" role="tablist" aria-label="Benefits pagination">
+                <div class="dot" role="tab" aria-selected="false" aria-label="Page 1"></div>
+                <div class="dot active" role="tab" aria-selected="true" aria-label="Page 2, current page"></div>
+                <div class="dot" role="tab" aria-selected="false" aria-label="Page 3"></div>
+            </div> -->
+        </section>
+    </main>
+
+
+
+    <section class="features-section" aria-labelledby="features-title">
+        <div class="features-container">
+            <div class="features-content">
+                <header class="features-header">
+                    <h1 id="features-title" class="main-title">
+                        <span class="title-black">Why Choose </span>
+                        <span class="title-highlight">Bringle</span>
+                        <span class="title-black">?</span>
+                    </h1>
+                    
+                    <div class="features-list">
+                        <article class="feature-item">
+                            <h3 class="feature-title">Wholesale Made Simple</h3>
+                            <p class="feature-description">Access thousands of wholesale products from trusted suppliers in one app.</p>
+                        </article>
+
+                        <article class="feature-item">
+                            <h3 class="feature-title">Competitive Pricing</h3>
+                            <p class="feature-description">Save more with bulk deals and near-expiry product discounts.</p>
+                        </article>
+
+                        <article class="feature-item">
+                            <h3 class="feature-title">Faster Deliveries</h3>
+                            <p class="feature-description">A dedicated driver network ensures your orders arrive on time, every time.</p>
+                        </article>
+
+                        <article class="feature-item">
+                            <h3 class="feature-title">Smart Inventory Tools</h3>
+                            <p class="feature-description">Manage staff, stock, and orders from your dashboard with zero hassle.</p>
+                        </article>
+
+                        <article class="feature-item">
+                            <h3 class="feature-title">Verified Network</h3>
+                            <p class="feature-description">Only trusted, approved businesses can join Bringle — ensuring transparency and security.</p>
+                        </article>
+                    </div>
+                </header>
+                
+                <!-- <button class="learn-more-btn" aria-label="Learn more about Bringle features">
+                    <span class="btn-text">Learn More</span>
+                    <svg class="arrow-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M6.25 13.75L13.75 6.25" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.25 6.25H13.75V13.75" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button> -->
+            </div>
+            
+            <img src="assets/Img/box-bringle.png" 
+                 alt="Bringle platform interface showcasing wholesale features and dashboard" 
+                 class="feature-image">
+        </div>
+    </section>
+
+
+
+
+    <main class="main-container-3">
+        <!-- Hero Section -->
+        <header class="hero-section-3">
+            <h1 class="hero-title-3">
+                <div class="title-main-3">Exclusive Products of</div>
+                <div class="title-highlight-3">Bringle App</div>
+            </h1>
+            <p class="hero-description-3">
+                Explore our wholesale marketplace featuring top categories and real-time offers. From groceries to beverages, personal care to cleaning supplies — Bringle brings it all together for your business.
+            </p>
+        </header>
+
+        <!-- Product Showcase -->
+        <section class="product-showcase-3">
+            <!-- Product Card 1 -->
+            <article class="product-card-3">
+                <div class="card-content-3">
+                    <div class="card-text-3">
+                        <div class="text-wrapper-3">
+                            <h3 class="card-title-3">Bringle Customer App (for Business Owners)</h3>
+                            <p class="card-description-3">Your wholesale business, in your pocket.</p>
+                        </div>
+                        <a href="https://apps.apple.com/kw/app/bringle/id6740459878" target="_blank" style="text-decoration: none;"><button class="details-button-3" aria-label="View details for Bringle Customer App">
+                            <span class="button-text-3">Details</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon" aria-hidden="true">
+                                <path d="M16.0535 6.2936L7.68728 7.71014M16.0535 6.2936L17.47 14.6598M16.0535 6.2936L7.94554 17.7068" stroke="#09A2A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button></a>
+                    </div>
+                </div>
+                <img src="assets/Img/phone-1.png" alt="Bringle Customer App interface showing business management features" class="card-image-3">
+            </article>
+
+            <!-- Product Card 2 -->
+            <article class="product-card-3">
+                <div class="card-content-3">
+                    <div class="card-text-3">
+                        <div class="text-wrapper-3">
+                            <h3 class="card-title-3">Bringle Driver App (for Delivery Partners)</h3>
+                            <p class="card-description-3">Deliver smarter, faster, and easier.</p>
+                        </div>
+                        <a href="https://apps.apple.com/kw/app/bringle-driver/id6742233243" target="_blank" style="text-decoration: none;"><button class="details-button-3" aria-label="View details for Bringle Driver App">
+                            <span class="button-text-3">Details</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow-icon" aria-hidden="true">
+                                <path d="M16.0535 6.2936L7.68728 7.71014M16.0535 6.2936L17.47 14.6598M16.0535 6.2936L7.94554 17.7068" stroke="#09A2A4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button></a>
+                    </div>
+                </div>
+                <img src="assets/Img/phone-2.png" alt="Bringle Driver App interface showing delivery management features" class="card-image-3">
+            </article>
+        </section>
+    </main>
+
+
+
+
+    <section id="services" class="services-section">
+        <div class="services-container">
+            <header class="services-header">
+                <h1 class="services-title">
+                    <span class="title-primary">Our Services of </span>
+                    <span class="title-accent">Bringle App</span>
+                </h1>
+                <p class="services-description">
+                    Everything your wholesale business needs, simplified. Explore how
+                    Bringle helps you buy, manage, and deliver smarter every day.
+                </p>
+            </header>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.9583 20C23.6433 20 22.3821 20.5224 21.4523 21.4523C20.5224 22.3821 20 23.6433 20 24.9583V46.9167C20 48.7953 20.7463 50.597 22.0747 51.9253C23.403 53.2537 25.2047 54 27.0833 54H46.9167C48.7953 54 50.597 53.2537 51.9253 51.9253C53.2537 50.597 54 48.7953 54 46.9167V42.6667H45.5V24.9583C45.5 23.6433 44.9776 22.3821 44.0477 21.4523C43.1179 20.5224 41.8567 20 40.5417 20H24.9583ZM45.5 45.5H51.1667V46.9167C51.1667 48.0438 50.7189 49.1248 49.9219 49.9219C49.1248 50.7189 48.0438 51.1667 46.9167 51.1667H45.5V45.5ZM22.8333 24.9583C22.8333 24.3947 23.0572 23.8542 23.4557 23.4557C23.8542 23.0572 24.3947 22.8333 24.9583 22.8333H40.5417C41.1053 22.8333 41.6458 23.0572 42.0443 23.4557C42.4428 23.8542 42.6667 24.3947 42.6667 24.9583V51.1667H27.0833C25.9562 51.1667 24.8752 50.7189 24.0781 49.9219C23.2811 49.1248 22.8333 48.0438 22.8333 46.9167V24.9583ZM27.0833 29.9167C27.0833 29.5409 27.2326 29.1806 27.4983 28.9149C27.7639 28.6493 28.1243 28.5 28.5 28.5H37C37.3757 28.5 37.7361 28.6493 38.0017 28.9149C38.2674 29.1806 38.4167 29.5409 38.4167 29.9167C38.4167 30.2924 38.2674 30.6527 38.0017 30.9184C37.7361 31.1841 37.3757 31.3333 37 31.3333H28.5C28.1243 31.3333 27.7639 31.1841 27.4983 30.9184C27.2326 30.6527 27.0833 30.2924 27.0833 29.9167ZM27.0833 37C27.0833 36.6243 27.2326 36.2639 27.4983 35.9983C27.7639 35.7326 28.1243 35.5833 28.5 35.5833H37C37.3757 35.5833 37.7361 35.7326 38.0017 35.9983C38.2674 36.2639 38.4167 36.6243 38.4167 37C38.4167 37.3757 38.2674 37.7361 38.0017 38.0017C37.7361 38.2674 37.3757 38.4167 37 38.4167H28.5C28.1243 38.4167 27.7639 38.2674 27.4983 38.0017C27.2326 37.7361 27.0833 37.3757 27.0833 37ZM28.5 42.6667C28.1243 42.6667 27.7639 42.8159 27.4983 43.0816C27.2326 43.3473 27.0833 43.7076 27.0833 44.0833C27.0833 44.4591 27.2326 44.8194 27.4983 45.0851C27.7639 45.3507 28.1243 45.5 28.5 45.5H32.75C33.1257 45.5 33.4861 45.3507 33.7517 45.0851C34.0174 44.8194 34.1667 44.4591 34.1667 44.0833C34.1667 43.7076 34.0174 43.3473 33.7517 43.0816C33.4861 42.8159 33.1257 42.6667 32.75 42.6667H28.5Z" fill="#09A2A4"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="service-title">Wholesale Marketplace</h2>
+                        <p class="service-text">Access a large catalog of verified suppliers and trending products. Buy in bulk, compare deals, and enjoy competitive pricing — all in one platform.</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.0835 28.3337C25.6483 28.3337 26.9168 27.0651 26.9168 25.5003C26.9168 23.9355 25.6483 22.667 24.0835 22.667C22.5187 22.667 21.2502 23.9355 21.2502 25.5003C21.2502 27.0651 22.5187 28.3337 24.0835 28.3337Z" stroke="#09A2A4" stroke-width="2"/>
+                            <path d="M9.91683 28.3337C11.4816 28.3337 12.7502 27.0651 12.7502 25.5003C12.7502 23.9355 11.4816 22.667 9.91683 22.667C8.35202 22.667 7.0835 23.9355 7.0835 25.5003C7.0835 27.0651 8.35202 28.3337 9.91683 28.3337Z" stroke="#09A2A4" stroke-width="2"/>
+                            <path d="M7.0835 25.4607C5.52941 25.3842 4.56183 25.1532 3.8705 24.4633C3.17916 23.7734 2.94966 22.8044 2.87316 21.2503M12.7502 25.5003H21.2502M26.9168 25.4607C28.4709 25.3842 29.4385 25.1532 30.1298 24.4633C31.1668 23.4249 31.1668 21.7561 31.1668 18.417V15.5837H24.5085C23.4531 15.5837 22.9261 15.5837 22.4997 15.4448C22.0745 15.3067 21.688 15.0698 21.3718 14.7537C21.0557 14.4375 20.8188 14.051 20.6807 13.6258C20.5418 13.1994 20.5418 12.6724 20.5418 11.617C20.5418 10.0346 20.5418 9.24408 20.3336 8.60374C20.1263 7.96592 19.7711 7.38621 19.2968 6.91199C18.8226 6.43777 18.2429 6.0825 17.6051 5.87524C16.9647 5.66699 16.1742 5.66699 14.5918 5.66699H2.8335M2.8335 11.3337H11.3335M2.8335 15.5837H8.50016" stroke="#09A2A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.542 8.5H23.1217C25.1844 8.5 26.2143 8.5 27.053 9.0015C27.8931 9.50158 28.3818 10.4097 29.3593 12.2258L31.167 15.5833" stroke="#09A2A4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="service-title">End-to-End Delivery Service</h2>
+                        <p class="service-text">From warehouse to your store — we handle it all. Bringle's driver network ensures fast, safe, and trackable delivery across Kuwait (expanding to UAE & GCC soon).</p>
+                    </div>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="64" height="64" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.9583 20C23.6433 20 22.3821 20.5224 21.4523 21.4523C20.5224 22.3821 20 23.6433 20 24.9583V46.9167C20 48.7953 20.7463 50.597 22.0747 51.9253C23.403 53.2537 25.2047 54 27.0833 54H46.9167C48.7953 54 50.597 53.2537 51.9253 51.9253C53.2537 50.597 54 48.7953 54 46.9167V42.6667H45.5V24.9583C45.5 23.6433 44.9776 22.3821 44.0477 21.4523C43.1179 20.5224 41.8567 20 40.5417 20H24.9583ZM45.5 45.5H51.1667V46.9167C51.1667 48.0438 50.7189 49.1248 49.9219 49.9219C49.1248 50.7189 48.0438 51.1667 46.9167 51.1667H45.5V45.5ZM22.8333 24.9583C22.8333 24.3947 23.0572 23.8542 23.4557 23.4557C23.8542 23.0572 24.3947 22.8333 24.9583 22.8333H40.5417C41.1053 22.8333 41.6458 23.0572 42.0443 23.4557C42.4428 23.8542 42.6667 24.3947 42.6667 24.9583V51.1667H27.0833C25.9562 51.1667 24.8752 50.7189 24.0781 49.9219C23.2811 49.1248 22.8333 48.0438 22.8333 46.9167V24.9583ZM27.0833 29.9167C27.0833 29.5409 27.2326 29.1806 27.4983 28.9149C27.7639 28.6493 28.1243 28.5 28.5 28.5H37C37.3757 28.5 37.7361 28.6493 38.0017 28.9149C38.2674 29.1806 38.4167 29.5409 38.4167 29.9167C38.4167 30.2924 38.2674 30.6527 38.0017 30.9184C37.7361 31.1841 37.3757 31.3333 37 31.3333H28.5C28.1243 31.3333 27.7639 31.1841 27.4983 30.9184C27.2326 30.6527 27.0833 30.2924 27.0833 29.9167ZM27.0833 37C27.0833 36.6243 27.2326 36.2639 27.4983 35.9983C27.7639 35.7326 28.1243 35.5833 28.5 35.5833H37C37.3757 35.5833 37.7361 35.7326 38.0017 35.9983C38.2674 36.2639 38.4167 36.6243 38.4167 37C38.4167 37.3757 38.2674 37.7361 38.0017 38.0017C37.7361 38.2674 37.3757 38.4167 37 38.4167H28.5C28.1243 38.4167 27.7639 38.2674 27.4983 38.0017C27.2326 37.7361 27.0833 37.3757 27.0833 37ZM28.5 42.6667C28.1243 42.6667 27.7639 42.8159 27.4983 43.0816C27.2326 43.3473 27.0833 43.7076 27.0833 44.0833C27.0833 44.4591 27.2326 44.8194 27.4983 45.0851C27.7639 45.3507 28.1243 45.5 28.5 45.5H32.75C33.1257 45.5 33.4861 45.3507 33.7517 45.0851C34.0174 44.8194 34.1667 44.4591 34.1667 44.0833C34.1667 43.7076 34.0174 43.3473 33.7517 43.0816C33.4861 42.8159 33.1257 42.6667 32.75 42.6667H28.5Z" fill="#09A2A4"/>
+                        </svg>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="service-title">Business Onboarding & Verification</h2>
+                        <p class="service-text">Bringle ensures that every buyer, supplier, and driver on our platform is verified — guaranteeing transparency, trust, and professional collaboration.</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- <button class="cta-button" onclick="console.log('View All Services clicked')">
+                View All Services
+                <svg class="arrow-icon" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.399 7.60514L9.28978 9.31646M19.399 7.60514L21.1103 17.7144M19.399 7.60514L9.60145 21.3958" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button> -->
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="how-it-works">
+        <div class="content-left">
+            <header class="header-1">
+                <div class="header-text">
+                    <p class="subtitle">How it works</p>
+                    <h1 class="title">
+                        <span class="title-white">Here's How </span>
+                        <span class="title-cyan">Bringle App </span>
+                        <span class="title-white">Works</span>
+                    </h1>
+                </div>
+                <p class="description">
+                    Discover how Bringle connects business owners, suppliers, and drivers in one smooth process — from ordering to delivery.
+                </p>
+            </header>
+            <!-- <button class="download-btn" onclick="alert('Redirecting to app store...')">
+                <span>Download App Now</span>
+                <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.399 7.60514L9.28978 9.31646M19.399 7.60514L21.1103 17.7144M19.399 7.60514L9.60145 21.3958" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button> -->
+        </div>
+
+        <div class="steps-container">
+            <nav aria-label="How Bringle works process steps">
+                <div class="step">
+                    <div class="step-number-container">
+                        <div class="step-number active">
+                            <span>1</span>
+                        </div>
+                        <div class="connector active"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Register Your Business</h3>
+                        <p class="step-description">Create your business account through the Bringle App or get added by our admin team.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number-container">
+                        <div class="step-number inactive">
+                            <span>2</span>
+                        </div>
+                        <div class="connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Browse & Order</h3>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number-container">
+                        <div class="step-number inactive">
+                            <span>3</span>
+                        </div>
+                        <div class="connector"></div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Delivery in Action</h3>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number-container">
+                        <div class="step-number inactive">
+                            <span>4</span>
+                        </div>
+                    </div>
+                    <div class="step-content">
+                        <h3 class="step-title">Manage Everything in One Place</h3>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    
+
+
+
+
+
+    
+
+
+    <!-- <section class="testimonial-section">
+        <header class="section-header-4">
+            <div class="header-content">
+                <div class="header-title">
+                    <h1>Our Customers</h1>
+                    <h2>Testimonials</h2>
+                </div>
+                <p class="header-description">
+                    Hear how Bringle helps business owners, suppliers, and drivers
+                    grow faster with smarter wholesale solutions.
+                </p>
+            </div>
+            <button class="cta-button" onclick="handleReadAllStories()">
+                <span>Read All Customer Stories</span>
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.25 13.75L13.75 6.25" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.25 6.25H13.75V13.75" stroke="#0A0A0A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </header>
+
+        <div class="testimonials-grid">
+            <article class="testimonial-card large">
+                <img 
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/9a7e7fb72814ce87cfe4a81d289ab18aef2e6b0a?width=1500" 
+                    alt="Sarah Hugo testimonial"
+                    class="testimonial-image"
+                />
+                <div class="testimonial-overlay"></div>
+                
+                <button class="play-button" onclick="handlePlayVideo('1')">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.8 2.6001L12.2 8.0001L3.8 13.4001V2.6001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Play Video</span>
+                </button>
+
+                <blockquote class="testimonial-quote">
+                    "Since using Bringle, I can order all my supplies in one app and get them delivered the next morning. It saves me hours every week!"
+                </blockquote>
+
+                <div class="testimonial-info">
+                    <h3 class="testimonial-name">Sarah Hugo</h3>
+                    <p class="testimonial-role">Owner of Al-Noor Mini Market</p>
+                </div>
+            </article>
+
+            <div class="testimonials-column">
+                <article class="testimonial-card small">
+                    <img 
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/e51cc89c0aeb9ab696c2e661953ccbacf827e1f6?width=852" 
+                        alt="Brooklyn Simmons testimonial"
+                        class="testimonial-image"
+                    />
+                    <div class="testimonial-overlay"></div>
+                    
+                    <button class="play-button" onclick="handlePlayVideo('2')">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8 2.6001L12.2 8.0001L3.8 13.4001V2.6001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Play Video</span>
+                    </button>
+
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-name">Brooklyn Simmons</h3>
+                        <p class="testimonial-role">Wholesale Supplier</p>
+                    </div>
+                </article>
+
+                <article class="testimonial-card small">
+                    <img 
+                        src="https://api.builder.io/api/v1/image/assets/TEMP/8b4e14ff14f98cf1680fb4634eec9c174437351f?width=852" 
+                        alt="Kristin Watson testimonial"
+                        class="testimonial-image"
+                    />
+                    <div class="testimonial-overlay"></div>
+                    
+                    <button class="play-button" onclick="handlePlayVideo('3')">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8 2.6001L12.2 8.0001L3.8 13.4001V2.6001Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Play Video</span>
+                    </button>
+
+                    <div class="testimonial-info">
+                        <h3 class="testimonial-name">Kristin Watson</h3>
+                        <p class="testimonial-role">Bringle Delivery Partner</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="hero-section-5" role="main" aria-labelledby="hero-title">
+        <div class="decorative-pattern-5">
+            <img src="assets/Img/logo-2.png" alt="Bringle logo">
+            <!-- <div class="decorative-circle-1"></div>
+            <div class="decorative-circle-2"></div> -->
+        </div>
+
+        <div class="hero-content-5">
+            <header class="hero-header-5">
+                <h1 id="hero-title" class="hero-title-5">
+                    <div class="hero-title-line-1">Power Your Wholesale Business with</div>
+                    <div class="hero-title-line-2">Bringle</div>
+                </h1>
+                <p class="hero-description-5">
+                    Bringle helps retailers, suppliers, and drivers connect seamlessly — simplifying bulk buying, delivery, and business management in one smart ecosystem.
+                </p>
+            </header>
+
+            <div class="video-container">
+                <div class="video-wrapper" id="videoWrapper">
+                    <video 
+                        id="videoPlayer" 
+                        poster="assets/Img/Screenshot 2025-10-26 181733.png"
+                        loop
+                        playsinline
+                    >
+                        <source src="assets/Img/bringle (1).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+        
+                    <!-- Overlay with Controls -->
+                    <div class="video-overlay" id="videoOverlay">
+                        <!-- Play/Pause Button -->
+                        <button class="play-button" id="playButton" aria-label="Play video">
+                            <!-- Play Icon -->
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                            <!-- Pause Icon -->
+                            <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
+                            </svg>
+                        </button>
+        
+                        <!-- Mute/Unmute Button -->
+                        <button class="mute-button" id="muteButton" aria-label="Mute video">
+                            <!-- Volume Icon -->
+                            <svg class="volume-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                            </svg>
+                            <!-- Mute Icon -->
+                            <svg class="mute-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                                <line x1="23" y1="9" x2="17" y2="15"/>
+                                <line x1="17" y1="9" x2="23" y2="15"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+ 
+
+    <main id="contact" class="main-container-6">
+        <div class="cont-6">
+          <!-- Hero Section -->
+          <section class="hero-wrapper-6">
+            <div class="hero-section-6">
+              <div class="hero-content-6">
+                <header class="hero-header-6">
+                  <p class="hero-subtitle-6 hero-sub-6">Your Source for Smarter Wholesale Shopping</p>
+                  <h1 class="hero-title-6">
+                    Download the <br />
+                    App Now!
+                  </h1>
+                  <p class="hero-description-6">
+                    Order in bulk, access exclusive deals, and manage your business anywhere, anytime — all in one app.
+                  </p>
+                </header>
+  
+                <div class="app-buttons-6">
+                  <button
+                    class="app-store-button-6"
+                    onclick="window.open('https://play.google.com/store/apps/details?id=mobile.bringle.net', '_blank')"
+                    aria-label="Download from Google Play"
+                  >
+                    <div class="button-content-6">
+                      <div class="icon-wrapper-6">
+                        <svg viewBox="0 0 24 24" class="store-icon-6" fill="currentColor">
+                          <path
+                            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.92 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                            fill="#000"
+                          />
+                        </svg>
+                      </div>
+                      <div class="button-text-6">
+                        <div class="button-label-6">GET IT ON</div>
+                        <div class="button-store-6">Google Play</div>
+                      </div>
+                    </div>
+                  </button>
+                  <button
+                    class="app-store-button-6 apple-button-6"
+                    onclick="window.open('https://apps.apple.com/kw/app/bringle/id6740459878', '_blank')"
+                    aria-label="Download from App Store"
+                  >
+                    <div class="button-content-6">
+                      <div class="icon-wrapper-6">
+                        <svg viewBox="0 0 24 24" class="store-icon-6" fill="currentColor">
+                          <path
+                            d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.19 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"
+                            fill="#000"
+                          />
+                        </svg>
+                      </div>
+                      <div class="button-text-6">
+                        <div class="button-label-6">Download on the</div>
+                        <div class="button-store-6">App Store</div>
+                      </div>
+                    </div>
+                  </button>
+                </div>
+              </div>
+  
+              <img
+                src="assets/Img/Group 2147224132.png"
+                alt="Mobile app interface preview showing wholesale shopping features"
+                class="hero-image-6"
+                loading="lazy"
+              />
+            </div>
+          </section>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Logo and Social Buttons -->
+            <div class="footer-header">
+                <div class="footer-logo">
+                    <img src="assets/Img/logo-2.png" alt="Bringle Logo" class="logo-icon">
+                    <div class="logo-text-1">Bringle</div>
+                </div>
+                <div class="social-buttons">
+                    <button class="social-btn" aria-label="Facebook" onclick="handleSocialClick('Facebook')">
+                        <img src="assets/Img/facebook.png" alt="Facebook">
+                    </button>
+                    <button class="social-btn" aria-label="Twitter" onclick="handleSocialClick('Twitter')">
+                        <img src="assets/Img/twitter.png" alt="Twitter">
+                    </button>
+                    <button class="social-btn" aria-label="Instagram" onclick="handleSocialClick('Instagram')">
+                        <img src="assets/Img/instagram.png" alt="Instagram">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Divider -->
+           <hr style="margin-top:30px;">
+
+            <!-- Menu Sections and Newsletter -->
+            <div class="footer-content">
+                <div class="menu-sections">
+                    <!-- Products -->
+                    <nav class="menu-section">
+                        <h3>Products</h3>
+                        <ul>
+                            <li><a href="https://apps.apple.com/kw/app/bringle/id6740459878"  target="_blank">App Store</a></li>
+                            <li><a href="https://play.google.com/store/apps/details?id=mobile.bringle.net"  target="_blank">Play Store</a></li>
+                            <li><a href="https://apps.apple.com/kw/app/bringle-driver/id6742233243"  target="_blank">Driver App</a></li>
+                            <!-- <li><a href="/promotions">Promotions & Deals</a></li> -->
+                        </ul>
+                    </nav>
+
+                    <!-- Resources -->
+                    <nav class="menu-section">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Get Help</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Partner Support</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Helpful Links -->
+                    <nav class="menu-section">
+                        <h3>Helpful Links</h3>
+                        <ul>
+                            <li><a href="#">Legal center</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Partnerships</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Get the latest information</h3>
+                    <form id="newsletterForm" onsubmit="handleNewsletterSubmit(event)">
+                        <div class="newsletter-input-wrapper">
+                            <input 
+                                type="email" 
+                                id="emailInput" 
+                                placeholder="Email address" 
+                                aria-label="Email address for newsletter subscription"
+                            >
+                            <button type="submit" aria-label="Subscribe to newsletter">
+                                <img src="assets/Img/Vector.png" alt="Submit">
+                            </button>
+                        </div>
+                        <p id="newsletterMessage" class="newsletter-message"></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <hr>
+                
+                <div class="footer-bottom-content">
+                    <div class="copyright">© Bringle 2025. All Rights Reserved</div>
+                    <div class="country-selector">
+                        <button id="countryButton" onclick="toggleCountryDropdown()" class="country-btn" aria-label="Select country">
+                            <div class="country-display">
+                                <img src="https://api.builder.io/api/v1/image/assets/56caeffc401a4135b5785065e6620448/b9487683e393bd73ae19b7f280b2b059cc19bda0?placeholderIfAbsent=true" alt="Country flag" class="country-flag">
+                                <span id="selectedCountry">English</span>
+                            </div>
+                            <img src="assets/Img/arrow.png" width="30px" alt="Dropdown arrow" class="dropdown-arrow">
+                        </button>
+                        <div id="countryDropdown" class="country-dropdown" role="listbox">
+                            <a href="index.html"><button>English</button></a>
+                            <a href="ar.html"><button>Arabic</button></a>
+                            <!-- <button onclick="selectCountry('United Kingdom')">United Kingdom</button>
+                            <button onclick="selectCountry('Australia')">Australia</button>
+                            <button onclick="selectCountry('Germany')">Germany</button>
+                            <button onclick="selectCountry('France')">France</button>
+                            <button onclick="selectCountry('Japan')">Japan</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="footer.js"></script>
+
+
+
+
+    <script>
+        // Social Media Click Handler
+function handleSocialClick(platform) {
+    console.log(`Navigate to ${platform}`);
+    // In a real app, this would navigate to the social media platform
+}
+
+// Newsletter Form Submission
+function handleNewsletterSubmit(event) {
+    event.preventDefault();
+    
+    const emailInput = document.getElementById('emailInput');
+    const messageElement = document.getElementById('newsletterMessage');
+    const email = emailInput.value.trim();
+    
+    // Clear previous message
+    messageElement.textContent = '';
+    messageElement.className = 'newsletter-message';
+    
+    // Validate email
+    if (!email) {
+        messageElement.textContent = 'Please enter your email address';
+        messageElement.classList.add('error');
+        return;
+    }
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        messageElement.textContent = 'Please enter a valid email address';
+        messageElement.classList.add('error');
+        return;
+    }
+    
+    // Disable button during submission
+    const submitButton = event.target.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+        messageElement.textContent = 'Thank you for subscribing!';
+        messageElement.classList.add('success');
+        emailInput.value = '';
+        submitButton.disabled = false;
+    }, 1000);
+}
+
+// Country Selector
+let isDropdownOpen = false;
+
+function toggleCountryDropdown() {
+    const dropdown = document.getElementById('countryDropdown');
+    const button = document.getElementById('countryButton');
+    
+    isDropdownOpen = !isDropdownOpen;
+    
+    if (isDropdownOpen) {
+        dropdown.classList.add('open');
+        button.classList.add('open');
+    } else {
+        dropdown.classList.remove('open');
+        button.classList.remove('open');
+    }
+}
+
+function selectCountry(country) {
+    const selectedCountryElement = document.getElementById('selectedCountry');
+    const dropdown = document.getElementById('countryDropdown');
+    const button = document.getElementById('countryButton');
+    
+    selectedCountryElement.textContent = country;
+    
+    // Update selected state
+    const buttons = dropdown.querySelectorAll('button');
+    buttons.forEach(btn => {
+        if (btn.textContent === country) {
+            btn.classList.add('selected');
+        } else {
+            btn.classList.remove('selected');
+        }
+    });
+    
+    // Close dropdown
+    dropdown.classList.remove('open');
+    button.classList.remove('open');
+    isDropdownOpen = false;
+    
+    console.log(`Country changed to: ${country}`);
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.getElementById('countryDropdown');
+    const button = document.getElementById('countryButton');
+    
+    if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        if (isDropdownOpen) {
+            dropdown.classList.remove('open');
+            button.classList.remove('open');
+            isDropdownOpen = false;
+        }
+    }
+});
+
+// Initialize selected country
+document.addEventListener('DOMContentLoaded', function() {
+    const selectedCountry = document.getElementById('selectedCountry').textContent;
+    const dropdown = document.getElementById('countryDropdown');
+    const buttons = dropdown.querySelectorAll('button');
+    
+    buttons.forEach(btn => {
+        if (btn.textContent === selectedCountry) {
+            btn.classList.add('selected');
+        }
+    });
+});
+    </script>
+
+
+
+
+
+
+
+    <script>
+        function handlePlayVideo(testimonialId) {
+            console.log('Playing video for testimonial:', testimonialId);
+            // Implement video playback functionality here
+            alert('Play video for testimonial: ' + testimonialId);
+        }
+
+        function handleReadAllStories() {
+            console.log('Navigating to all customer stories');
+            // Implement navigation to stories page here
+            alert('Navigate to all customer stories');
+        }
+    </script>
+<script>
+        function handleDetailsClick(productId) {
+            console.log('Navigating to details for product: ' + productId);
+            // In a real application, this could navigate to a details page
+            alert('Details for: ' + productId);
+        }
+    </script>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+        // const desktopNavItems = document.querySelectorAll('.nav-desktop .nav-item');
+        const mobileNavItems = document.querySelectorAll('.nav-mobile .nav-mobile-item');
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            mobileMenuOverlay.classList.toggle('active');
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        mobileMenuClose.addEventListener('click', toggleMobileMenu);
+        
+        // Close menu when clicking overlay
+        mobileMenuOverlay.addEventListener('click', function(e) {
+            if (e.target === mobileMenuOverlay) {
+                toggleMobileMenu();
+            }
+        });
+
+        // Handle desktop navigation clicks
+        desktopNavItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                e.preventDefault();
+                desktopNavItems.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+                console.log('Navigating to:', this.dataset.page);
+            });
+        });
+
+        // Handle mobile navigation clicks
+        mobileNavItems.forEach(item => {
+            item.addEventListener('click', function() {
+                mobileNavItems.forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+                toggleMobileMenu();
+                console.log('Navigating to:', this.dataset.page);
+            });
+        });
+    </script>
+
+
+<script>
+    // Get elements
+    const video = document.getElementById('videoPlayer');
+    const playButton = document.getElementById('playButton');
+    const muteButton = document.getElementById('muteButton');
+    const overlay = document.getElementById('videoOverlay');
+    const videoWrapper = document.getElementById('videoWrapper');
+    
+    let isPlaying = false;
+    let isMuted = false;
+    let hasStarted = false;
+    let controlsTimeout;
+
+    // Intersection Observer for scroll-triggered autoplay
+    const observerOptions = {
+        threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !hasStarted) {
+                // Try to autoplay with sound
+                video.muted = false;
+                isMuted = false;
+                
+                video.play()
+                    .then(() => {
+                        isPlaying = true;
+                        hasStarted = true;
+                        playButton.classList.add('playing');
+                        hideControlsWithDelay();
+                    })
+                    .catch((error) => {
+                        console.log('Autoplay with sound failed, trying muted:', error);
+                        // If autoplay with sound fails, try muted
+                        video.muted = true;
+                        isMuted = true;
+                        muteButton.classList.add('muted');
+                        
+                        video.play()
+                            .then(() => {
+                                isPlaying = true;
+                                hasStarted = true;
+                                playButton.classList.add('playing');
+                                hideControlsWithDelay();
+                            })
+                            .catch(err => {
+                                console.log('Autoplay failed:', err);
+                            });
+                    });
+            }
+        });
+    }, observerOptions);
+
+    observer.observe(video);
+
+    // Play/Pause functionality
+    playButton.addEventListener('click', () => {
+        if (isPlaying) {
+            video.pause();
+            isPlaying = false;
+            playButton.classList.remove('playing');
+            showControls();
+        } else {
+            video.play();
+            isPlaying = true;
+            playButton.classList.add('playing');
+            hideControlsWithDelay();
+        }
+    });
+
+    // Mute/Unmute functionality
+    muteButton.addEventListener('click', () => {
+        if (isMuted) {
+            video.muted = false;
+            isMuted = false;
+            muteButton.classList.remove('muted');
+        } else {
+            video.muted = true;
+            isMuted = true;
+            muteButton.classList.add('muted');
+        }
+    });
+
+    // Show/Hide controls on hover
+    videoWrapper.addEventListener('mouseenter', () => {
+        showControls();
+        clearTimeout(controlsTimeout);
+    });
+
+    videoWrapper.addEventListener('mouseleave', () => {
+        if (isPlaying) {
+            hideControlsWithDelay();
+        }
+    });
+
+    function showControls() {
+        overlay.classList.remove('hidden');
+    }
+
+    function hideControls() {
+        if (isPlaying) {
+            overlay.classList.add('hidden');
+        }
+    }
+
+    function hideControlsWithDelay() {
+        clearTimeout(controlsTimeout);
+        controlsTimeout = setTimeout(hideControls, 2000);
+    }
+
+    // Show controls when video is paused
+    video.addEventListener('pause', () => {
+        showControls();
+    });
+
+    video.addEventListener('play', () => {
+        hideControlsWithDelay();
+    });
+</script>
+</body>
+</html>
